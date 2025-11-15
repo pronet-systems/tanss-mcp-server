@@ -1,0 +1,62 @@
+[tanss]
+# TANSS API Base URL
+base_url = https://api.tanss.de
+
+# TANSS API Token (for regular employee access)
+# Get your token by logging in via POST /api/v1/login
+# Use the apiToken (Bearer token) returned from the login response
+api_token = YOUR_API_TOKEN_HERE
+
+# Optional: Refresh token for automatic token renewal
+refresh_token = YOUR_REFRESH_TOKEN_HERE
+
+# Special role-based API tokens
+# These are external API tokens for specific roles that can't use employee login
+
+# ERP API Token (role: "ERP")
+# Required for /erp/v1/ endpoints
+# Create in TANSS: Settings → API → Create External Token → Role: ERP
+erp_api_token = YOUR_ERP_TOKEN_HERE
+
+# Phone API Token (role: "PHONE" / Telefonie)
+# Required for /api/v1/calls endpoints
+# Create in TANSS: Settings → API → Create External Token → Role: PHONE
+phone_api_token = YOUR_PHONE_TOKEN_HERE
+
+# Remote Support API Token (role: "REMOTE_SUPPORT" / Fernwartung)
+# Required for remote support endpoints
+# Create in TANSS: Settings → API → Create External Token → Role: REMOTE_SUPPORT
+remote_support_api_token = YOUR_REMOTE_SUPPORT_TOKEN_HERE
+
+# Monitoring API Token (role: "MONITORING")
+# Required for monitoring endpoints
+# Create in TANSS: Settings → API → Create External Token → Role: MONITORING
+monitoring_api_token = YOUR_MONITORING_TOKEN_HERE
+
+# Device Management API Token (role: "DEVICE_MANAGEMENT")
+# Can be used for device management endpoints as alternative to employee token
+device_management_api_token = YOUR_DEVICE_MANAGEMENT_TOKEN_HERE
+
+# Timestamp API Token (alternative for POST /api/timestamps/v1)
+# Can be used instead of employee token for timestamp creation
+timestamp_api_token = YOUR_TIMESTAMP_TOKEN_HERE
+
+[credentials]
+# Login credentials (optional - only needed if you want automatic login)
+# Remove or leave empty after first login for security
+username = 
+password = 
+
+[sse]
+# SSE Server Configuration (only used by server_sse.py)
+# Host to bind to (127.0.0.1 for localhost only, 0.0.0.0 for all interfaces)
+host = 127.0.0.1
+
+# Port to listen on
+port = 3001
+
+# Enable auto-reload for development (true/false)
+reload = false
+
+# Log level (debug, info, warning, error, critical)
+log_level = info

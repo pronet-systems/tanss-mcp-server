@@ -1,0 +1,1644 @@
+{
+  "activityfeed": [
+    {
+      "name": "activityfeed_put_v1_tanssEvents",
+      "method": "PUT",
+      "path": "/api/v1/tanssEvents",
+      "summary": "List of user items"
+    },
+    {
+      "name": "activityfeed_get_tanssEvents_unseen",
+      "method": "GET",
+      "path": "/api/v1/tanssEvents/unseen",
+      "summary": "Number of unseen events"
+    },
+    {
+      "name": "activityfeed_post_all_seen",
+      "method": "POST",
+      "path": "/api/v1/tanssEvents/mark/all/seen",
+      "summary": "Marks all as seen"
+    }
+  ],
+  "availability": [
+    {
+      "name": "availability_get_v1_availability",
+      "method": "GET",
+      "path": "/api/v1/availability",
+      "summary": "Fetches availability infos"
+    }
+  ],
+  "callback": [
+    {
+      "name": "callback_post_v1_callbacks",
+      "method": "POST",
+      "path": "/api/v1/callbacks",
+      "summary": "Creates a callback"
+    },
+    {
+      "name": "callback_put_v1_callbacks",
+      "method": "PUT",
+      "path": "/api/v1/callbacks",
+      "summary": "Get a list of callbacks"
+    },
+    {
+      "name": "callback_get_v1_callbacks",
+      "method": "GET",
+      "path": "/api/v1/callbacks/{callbackId}",
+      "summary": "Gets a callback"
+    },
+    {
+      "name": "callback_put_v1_callbacks",
+      "method": "PUT",
+      "path": "/api/v1/callbacks/{callbackId}",
+      "summary": "Updates a callback"
+    }
+  ],
+  "calls": [
+    {
+      "name": "calls_post_calls_v1",
+      "method": "POST",
+      "path": "/api/calls/v1",
+      "summary": "Creates/imports a phone call into the database"
+    },
+    {
+      "name": "calls_put_calls_v1",
+      "method": "PUT",
+      "path": "/api/calls/v1",
+      "summary": "Get a list of phone calls"
+    },
+    {
+      "name": "calls_get_calls_v1",
+      "method": "GET",
+      "path": "/api/calls/v1/{id}",
+      "summary": "Get phone call by id"
+    },
+    {
+      "name": "calls_put_calls_v1",
+      "method": "PUT",
+      "path": "/api/calls/v1/{id}",
+      "summary": "Update phone call"
+    },
+    {
+      "name": "calls_post_v1_identify",
+      "method": "POST",
+      "path": "/api/calls/v1/identify",
+      "summary": "identifies a phone call"
+    },
+    {
+      "name": "calls_get_v1_employeeAssignment",
+      "method": "GET",
+      "path": "/api/calls/v1/employeeAssignment",
+      "summary": "Get all employee assignments"
+    },
+    {
+      "name": "calls_post_v1_employeeAssignment",
+      "method": "POST",
+      "path": "/api/calls/v1/employeeAssignment",
+      "summary": "Creates a new employee assignment"
+    },
+    {
+      "name": "calls_delete_v1_employeeAssignment",
+      "method": "DELETE",
+      "path": "/api/calls/v1/employeeAssignment",
+      "summary": "Deletes an employee assignment"
+    },
+    {
+      "name": "calls_post_v1_notification",
+      "method": "POST",
+      "path": "/api/calls/v1/notification",
+      "summary": "Creates a call notification"
+    }
+  ],
+  "calls_user_context": [
+    {
+      "name": "calls_user_context_put_v1_phoneCalls",
+      "method": "PUT",
+      "path": "/api/v1/phoneCalls",
+      "summary": "Get a list of phone calls"
+    },
+    {
+      "name": "calls_user_context_get_v1_phoneCalls",
+      "method": "GET",
+      "path": "/api/v1/phoneCalls/{id}",
+      "summary": "Get phone call by id"
+    },
+    {
+      "name": "calls_user_context_post_phoneCalls_identify",
+      "method": "POST",
+      "path": "/api/v1/phoneCalls/identify",
+      "summary": "identifies a phone call"
+    }
+  ],
+  "chats": [
+    {
+      "name": "chats_post_v1_chats",
+      "method": "POST",
+      "path": "/api/v1/chats",
+      "summary": "Creates a new chat"
+    },
+    {
+      "name": "chats_put_v1_chats",
+      "method": "PUT",
+      "path": "/api/v1/chats",
+      "summary": "Get a list of chats"
+    },
+    {
+      "name": "chats_get_v1_chats",
+      "method": "GET",
+      "path": "/api/v1/chats/{chatId}",
+      "summary": "Gets a chat"
+    },
+    {
+      "name": "chats_get_chats_closeRequests",
+      "method": "GET",
+      "path": "/api/v1/chats/closeRequests",
+      "summary": "Gets chat close requests"
+    },
+    {
+      "name": "chats_post_chats_messages",
+      "method": "POST",
+      "path": "/api/v1/chats/messages",
+      "summary": "Creates a new chat message"
+    },
+    {
+      "name": "chats_post_chats_participants",
+      "method": "POST",
+      "path": "/api/v1/chats/participants",
+      "summary": "Adds a participant"
+    },
+    {
+      "name": "chats_delete_chats_participants",
+      "method": "DELETE",
+      "path": "/api/v1/chats/participants",
+      "summary": "Deletes a participant"
+    },
+    {
+      "name": "chats_post_chats_close",
+      "method": "POST",
+      "path": "/api/v1/chats/close/{chatId}",
+      "summary": "Closes a chat"
+    },
+    {
+      "name": "chats_put_chats_close",
+      "method": "PUT",
+      "path": "/api/v1/chats/close/{chatId}",
+      "summary": "Accept/decline close request"
+    },
+    {
+      "name": "chats_post_chats_reOpen",
+      "method": "POST",
+      "path": "/api/v1/chats/reOpen/{chatId}",
+      "summary": "re-opens a chat"
+    }
+  ],
+  "checklists": [
+    {
+      "name": "checklists_post_checklists_assignment",
+      "method": "POST",
+      "path": "/api/v1/checklists/assignment/{linkTypeId}/{linkId}/{checklistId}",
+      "summary": "Assigns a checklist to a ticket"
+    },
+    {
+      "name": "checklists_delete_checklists_assignment",
+      "method": "DELETE",
+      "path": "/api/v1/checklists/assignment/{linkTypeId}/{linkId}/{checklistId}",
+      "summary": "Removes a checklist from a ticket"
+    },
+    {
+      "name": "checklists_get_checklists_assignment",
+      "method": "GET",
+      "path": "/api/v1/checklists/assignment/{linkTypeId}/{linkId}",
+      "summary": "Gets checklists for a ticket"
+    },
+    {
+      "name": "checklists_get_checklists_process",
+      "method": "GET",
+      "path": "/api/v1/checklists/{checklistId}/process",
+      "summary": "Gets checklist for ticket"
+    },
+    {
+      "name": "checklists_put_checklists_check",
+      "method": "PUT",
+      "path": "/api/v1/checklists/check",
+      "summary": "Check an item"
+    }
+  ],
+  "company": [
+    {
+      "name": "company_post_v1_companies",
+      "method": "POST",
+      "path": "/api/v1/companies",
+      "summary": "Creates a new company"
+    },
+    {
+      "name": "company_get_companies_employees",
+      "method": "GET",
+      "path": "/api/v1/companies/{companyId}/employees",
+      "summary": "Gets all employees of a company"
+    }
+  ],
+  "company_category": [
+    {
+      "name": "company_category_get_v1_companyCategories",
+      "method": "GET",
+      "path": "/api/v1/companyCategories",
+      "summary": "list of categories"
+    },
+    {
+      "name": "company_category_post_v1_companyCategories",
+      "method": "POST",
+      "path": "/api/v1/companyCategories",
+      "summary": "Creates a new company category"
+    },
+    {
+      "name": "company_category_get_v1_companyCategories",
+      "method": "GET",
+      "path": "/api/v1/companyCategories/{id}",
+      "summary": "gets a category"
+    },
+    {
+      "name": "company_category_put_v1_companyCategories",
+      "method": "PUT",
+      "path": "/api/v1/companyCategories/{id}",
+      "summary": "updates a category"
+    },
+    {
+      "name": "company_category_delete_v1_companyCategories",
+      "method": "DELETE",
+      "path": "/api/v1/companyCategories/{id}",
+      "summary": "Deletes a company category"
+    },
+    {
+      "name": "company_category_get_companyCategories_types",
+      "method": "GET",
+      "path": "/api/v1/companyCategories/types",
+      "summary": "list of company types"
+    },
+    {
+      "name": "company_category_post_companyCategories_types",
+      "method": "POST",
+      "path": "/api/v1/companyCategories/types",
+      "summary": "Creates a new company type"
+    },
+    {
+      "name": "company_category_get_companyCategories_types",
+      "method": "GET",
+      "path": "/api/v1/companyCategories/types/{id}",
+      "summary": "gets a company type"
+    },
+    {
+      "name": "company_category_put_companyCategories_types",
+      "method": "PUT",
+      "path": "/api/v1/companyCategories/types/{id}",
+      "summary": "updates a company type"
+    },
+    {
+      "name": "company_category_delete_companyCategories_types",
+      "method": "DELETE",
+      "path": "/api/v1/companyCategories/types/{id}",
+      "summary": "Deletes a company type"
+    }
+  ],
+  "components": [
+    {
+      "name": "components_get_v1_components",
+      "method": "GET",
+      "path": "/api/v1/components/{componentId}",
+      "summary": "Gets a component by id"
+    },
+    {
+      "name": "components_put_v1_components",
+      "method": "PUT",
+      "path": "/api/v1/components/{componentId}",
+      "summary": "Updates a component"
+    },
+    {
+      "name": "components_delete_v1_components",
+      "method": "DELETE",
+      "path": "/api/v1/components/{componentId}",
+      "summary": "Deletes a component"
+    },
+    {
+      "name": "components_post_v1_components",
+      "method": "POST",
+      "path": "/api/v1/components",
+      "summary": "Creates a component"
+    },
+    {
+      "name": "components_put_v1_components",
+      "method": "PUT",
+      "path": "/api/v1/components",
+      "summary": "Gets a list of components"
+    },
+    {
+      "name": "components_get_components_types",
+      "method": "GET",
+      "path": "/api/v1/components/types",
+      "summary": "Gets a list of component types"
+    },
+    {
+      "name": "components_post_components_types",
+      "method": "POST",
+      "path": "/api/v1/components/types",
+      "summary": "Create component type"
+    },
+    {
+      "name": "components_put_components_types",
+      "method": "PUT",
+      "path": "/api/v1/components/types/{typeId}",
+      "summary": "Update component type"
+    },
+    {
+      "name": "components_delete_components_types",
+      "method": "DELETE",
+      "path": "/api/v1/components/types/{typeId}",
+      "summary": "Delete component type"
+    }
+  ],
+  "cpus": [
+    {
+      "name": "cpus_post_v1_cpus",
+      "method": "POST",
+      "path": "/api/v1/cpus",
+      "summary": "Creates a new cpu"
+    },
+    {
+      "name": "cpus_get_v1_cpus",
+      "method": "GET",
+      "path": "/api/v1/cpus",
+      "summary": "Get a list of all cpus"
+    },
+    {
+      "name": "cpus_put_v1_cpus",
+      "method": "PUT",
+      "path": "/api/v1/cpus/{id}",
+      "summary": "Updates a cpu"
+    },
+    {
+      "name": "cpus_get_v1_cpus",
+      "method": "GET",
+      "path": "/api/v1/cpus/{id}",
+      "summary": "Get a cpu"
+    },
+    {
+      "name": "cpus_delete_v1_cpus",
+      "method": "DELETE",
+      "path": "/api/v1/cpus/{id}",
+      "summary": "Deletes a cpu"
+    }
+  ],
+  "documents": [
+    {
+      "name": "documents_put_v1_documents",
+      "method": "PUT",
+      "path": "/api/v1/documents",
+      "summary": "Get a list of company documents"
+    },
+    {
+      "name": "documents_post_v1_documents",
+      "method": "POST",
+      "path": "/api/v1/documents",
+      "summary": "Creates a document"
+    },
+    {
+      "name": "documents_get_v1_documents",
+      "method": "GET",
+      "path": "/api/v1/documents/{id}",
+      "summary": "Get a single document (including content)"
+    },
+    {
+      "name": "documents_put_v1_documents",
+      "method": "PUT",
+      "path": "/api/v1/documents/{id}",
+      "summary": "Updates a document"
+    },
+    {
+      "name": "documents_delete_v1_documents",
+      "method": "DELETE",
+      "path": "/api/v1/documents/{id}",
+      "summary": "Deletes a document"
+    },
+    {
+      "name": "documents_post_documents_file",
+      "method": "POST",
+      "path": "/api/v1/documents/{id}/file",
+      "summary": "Uploads a file"
+    }
+  ],
+  "domains": [
+    {
+      "name": "domains_post_v1_domains",
+      "method": "POST",
+      "path": "/api/v1/domains",
+      "summary": "Creates a domain"
+    },
+    {
+      "name": "domains_get_v1_domains",
+      "method": "GET",
+      "path": "/api/v1/domains/{id}",
+      "summary": "Gets a single domain"
+    },
+    {
+      "name": "domains_put_v1_domains",
+      "method": "PUT",
+      "path": "/api/v1/domains/{id}",
+      "summary": "Updates a domain"
+    },
+    {
+      "name": "domains_delete_v1_domains",
+      "method": "DELETE",
+      "path": "/api/v1/domains/{id}",
+      "summary": "Deletes a domain"
+    },
+    {
+      "name": "domains_get_domains_company",
+      "method": "GET",
+      "path": "/api/v1/domains/company/{id}",
+      "summary": "List of domains of a company"
+    }
+  ],
+  "emailaccounts": [
+    {
+      "name": "emailaccounts_post_v1_emailAccounts",
+      "method": "POST",
+      "path": "/api/v1/emailAccounts",
+      "summary": "Creates an email account"
+    },
+    {
+      "name": "emailaccounts_get_emailAccounts_compamy",
+      "method": "GET",
+      "path": "/api/v1/emailAccounts/compamy/{companyId}",
+      "summary": "List accounts of company"
+    },
+    {
+      "name": "emailaccounts_get_v1_emailAccounts",
+      "method": "GET",
+      "path": "/api/v1/emailAccounts/{id}",
+      "summary": "Gets an account"
+    },
+    {
+      "name": "emailaccounts_put_v1_emailAccounts",
+      "method": "PUT",
+      "path": "/api/v1/emailAccounts/{id}",
+      "summary": "Edit an accounts"
+    },
+    {
+      "name": "emailaccounts_delete_v1_emailAccounts",
+      "method": "DELETE",
+      "path": "/api/v1/emailAccounts/{id}",
+      "summary": "Deletes an account"
+    },
+    {
+      "name": "emailaccounts_get_emailAccounts_types",
+      "method": "GET",
+      "path": "/api/v1/emailAccounts/types",
+      "summary": "List account types"
+    }
+  ],
+  "employees": [
+    {
+      "name": "employees_get_employees_technicians",
+      "method": "GET",
+      "path": "/api/v1/employees/technicians",
+      "summary": "Gets all technicians"
+    },
+    {
+      "name": "employees_post_v1_employees",
+      "method": "POST",
+      "path": "/api/v1/employees",
+      "summary": "creates an employee"
+    }
+  ],
+  "erp": [
+    {
+      "name": "erp_post_v1_invoices",
+      "method": "POST",
+      "path": "/api/erp/v1/invoices",
+      "summary": "Insert new invoices"
+    },
+    {
+      "name": "erp_get_v1_invoices",
+      "method": "GET",
+      "path": "/api/erp/v1/invoices",
+      "summary": "Gets a list of billable supports"
+    },
+    {
+      "name": "erp_get_v1_customers",
+      "method": "GET",
+      "path": "/api/erp/v1/customers",
+      "summary": "Get a list of customers and employees"
+    },
+    {
+      "name": "erp_post_v1_customers",
+      "method": "POST",
+      "path": "/api/erp/v1/customers",
+      "summary": "Insert new customers"
+    },
+    {
+      "name": "erp_post_v1_tickets",
+      "method": "POST",
+      "path": "/api/erp/v1/tickets",
+      "summary": "create a new ticket"
+    },
+    {
+      "name": "erp_get_tickets_status",
+      "method": "GET",
+      "path": "/api/erp/v1/tickets/status",
+      "summary": "gets a list of tickets states"
+    },
+    {
+      "name": "erp_get_tickets_types",
+      "method": "GET",
+      "path": "/api/erp/v1/tickets/types",
+      "summary": "gets a list of tickets types"
+    },
+    {
+      "name": "erp_post_tickets_upload",
+      "method": "POST",
+      "path": "/api/erp/v1/tickets/{ticketId}/upload",
+      "summary": "upload a document/image into a ticket"
+    },
+    {
+      "name": "erp_get_companies_employees",
+      "method": "GET",
+      "path": "/api/erp/v1/companies/employees",
+      "summary": "get all employees of a company"
+    },
+    {
+      "name": "erp_get_companies_departments",
+      "method": "GET",
+      "path": "/api/erp/v1/companies/departments",
+      "summary": "gets all departments"
+    },
+    {
+      "name": "erp_get_v1_companyCategories",
+      "method": "GET",
+      "path": "/api/erp/v1/companyCategories",
+      "summary": "list of company categories"
+    },
+    {
+      "name": "erp_post_v1_companyCategories",
+      "method": "POST",
+      "path": "/api/erp/v1/companyCategories",
+      "summary": "Creates a new company category"
+    },
+    {
+      "name": "erp_get_departments_employees",
+      "method": "GET",
+      "path": "/api/erp/v1/departments/{departmentId}/employees",
+      "summary": "gets all employees of a department"
+    },
+    {
+      "name": "erp_get_companies_searchId",
+      "method": "GET",
+      "path": "/api/erp/v1/companies/searchId/{displayId}",
+      "summary": "search for a company"
+    },
+    {
+      "name": "erp_get_employees_departments",
+      "method": "GET",
+      "path": "/api/erp/v1/employees/{employeeId}/departments",
+      "summary": "gets all departments of a employee"
+    },
+    {
+      "name": "erp_get_employees_departments",
+      "method": "GET",
+      "path": "/api/erp/v1/companies/employees/departments/",
+      "summary": "gets all users with the associated departments"
+    }
+  ],
+  "hddtypes": [
+    {
+      "name": "hddtypes_post_v1_hddTypes",
+      "method": "POST",
+      "path": "/api/v1/hddTypes",
+      "summary": "Creates a new hdd type"
+    },
+    {
+      "name": "hddtypes_get_v1_hddTypes",
+      "method": "GET",
+      "path": "/api/v1/hddTypes",
+      "summary": "Get a list of all hdd types"
+    },
+    {
+      "name": "hddtypes_put_v1_hddTypes",
+      "method": "PUT",
+      "path": "/api/v1/hddTypes/{id}",
+      "summary": "Updates a hdd type"
+    },
+    {
+      "name": "hddtypes_get_v1_hddTypes",
+      "method": "GET",
+      "path": "/api/v1/hddTypes/{id}",
+      "summary": "Get a hdd type"
+    },
+    {
+      "name": "hddtypes_delete_v1_hddTypes",
+      "method": "DELETE",
+      "path": "/api/v1/hddTypes/{id}",
+      "summary": "Deletes a hdd type"
+    }
+  ],
+  "identify": [
+    {
+      "name": "identify_post_v1_identify",
+      "method": "POST",
+      "path": "/api/v1/identify",
+      "summary": "identifies items"
+    }
+  ],
+  "ips": [
+    {
+      "name": "ips_get_v1_ips",
+      "method": "GET",
+      "path": "/api/v1/ips/{assignmentType}/{assignmentId}",
+      "summary": "Gets ip addresses"
+    },
+    {
+      "name": "ips_post_v1_ips",
+      "method": "POST",
+      "path": "/api/v1/ips/{assignmentType}/{assignmentId}",
+      "summary": "Creates an ip address"
+    },
+    {
+      "name": "ips_put_v1_ips",
+      "method": "PUT",
+      "path": "/api/v1/ips/{id}",
+      "summary": "Update ip address"
+    },
+    {
+      "name": "ips_delete_v1_ips",
+      "method": "DELETE",
+      "path": "/api/v1/ips/{id}",
+      "summary": "Deletes an ip address"
+    }
+  ],
+  "mails": [
+    {
+      "name": "mails_post_test_smtp",
+      "method": "POST",
+      "path": "/api/v1/mails/test/smtp",
+      "summary": "Test email smtp settings"
+    }
+  ],
+  "manufacturer": [
+    {
+      "name": "manufacturer_post_v1_manufacturers",
+      "method": "POST",
+      "path": "/api/v1/manufacturers",
+      "summary": "Creates a new manufacturer"
+    },
+    {
+      "name": "manufacturer_get_v1_manufacturers",
+      "method": "GET",
+      "path": "/api/v1/manufacturers",
+      "summary": "Get a list of all manufacturers"
+    },
+    {
+      "name": "manufacturer_put_v1_manufacturers",
+      "method": "PUT",
+      "path": "/api/v1/manufacturers/{id}",
+      "summary": "Updates a manufacturer"
+    },
+    {
+      "name": "manufacturer_get_v1_manufacturers",
+      "method": "GET",
+      "path": "/api/v1/manufacturers/{id}",
+      "summary": "Get a manufacturer"
+    },
+    {
+      "name": "manufacturer_delete_v1_manufacturers",
+      "method": "DELETE",
+      "path": "/api/v1/manufacturers/{id}",
+      "summary": "Deletes a manufacturer"
+    }
+  ],
+  "monitoring": [
+    {
+      "name": "monitoring_post_v1_ticket",
+      "method": "POST",
+      "path": "/api/monitoring/v1/ticket",
+      "summary": "Creates a ticket, using the monitoring api"
+    },
+    {
+      "name": "monitoring_post_v1_assignGroup",
+      "method": "POST",
+      "path": "/api/monitoring/v1/assignGroup",
+      "summary": "Assigns a groupName to a company or device"
+    },
+    {
+      "name": "monitoring_delete_v1_assignGroup",
+      "method": "DELETE",
+      "path": "/api/monitoring/v1/assignGroup",
+      "summary": "Delete a group assignment"
+    },
+    {
+      "name": "monitoring_get_v1_assignGroup",
+      "method": "GET",
+      "path": "/api/monitoring/v1/assignGroup",
+      "summary": "Gets all group assignments"
+    },
+    {
+      "name": "monitoring_get_v1_ticketsFromGroup",
+      "method": "GET",
+      "path": "/api/monitoring/v1/ticketsFromGroup",
+      "summary": "Gets ticket(s), based on a given group"
+    },
+    {
+      "name": "monitoring_get_v1_ticket",
+      "method": "GET",
+      "path": "/api/monitoring/v1/ticket/{ticketId}",
+      "summary": "Gets a ticket (created by the monitoring api) by id"
+    },
+    {
+      "name": "monitoring_put_v1_ticket",
+      "method": "PUT",
+      "path": "/api/monitoring/v1/ticket/{ticketId}",
+      "summary": "Updates a ticket (created by the monitoring api) by id"
+    }
+  ],
+  "offer": [
+    {
+      "name": "offer_post_offers_erpSelections",
+      "method": "POST",
+      "path": "/api/v1/offers/erpSelections",
+      "summary": "Creates a new erp selection"
+    },
+    {
+      "name": "offer_get_offers_erpSelections",
+      "method": "GET",
+      "path": "/api/v1/offers/erpSelections/{erpSelectionId}",
+      "summary": "Fetches an erp selection"
+    },
+    {
+      "name": "offer_put_offers_erpSelections",
+      "method": "PUT",
+      "path": "/api/v1/offers/erpSelections/{erpSelectionId}",
+      "summary": "Updates an erp selection"
+    },
+    {
+      "name": "offer_delete_offers_erpSelections",
+      "method": "DELETE",
+      "path": "/api/v1/offers/erpSelections/{erpSelectionId}",
+      "summary": "Deletes an erp selection"
+    },
+    {
+      "name": "offer_get_offers_templates",
+      "method": "GET",
+      "path": "/api/v1/offers/templates",
+      "summary": "Gets list of offer templates"
+    },
+    {
+      "name": "offer_post_offers_templates",
+      "method": "POST",
+      "path": "/api/v1/offers/templates",
+      "summary": "Creates an offer template"
+    },
+    {
+      "name": "offer_get_offers_templates",
+      "method": "GET",
+      "path": "/api/v1/offers/templates/{templateId}",
+      "summary": "Gets an offer templates"
+    },
+    {
+      "name": "offer_put_offers_templates",
+      "method": "PUT",
+      "path": "/api/v1/offers/templates/{templateId}",
+      "summary": "Updates an offer templates"
+    },
+    {
+      "name": "offer_delete_offers_templates",
+      "method": "DELETE",
+      "path": "/api/v1/offers/templates/{templateId}",
+      "summary": "Deletes an offer template"
+    },
+    {
+      "name": "offer_get_erpSelections_matPicker",
+      "method": "GET",
+      "path": "/api/v1/offers/erpSelections/matPicker",
+      "summary": "material picker"
+    },
+    {
+      "name": "offer_get_erpSelections_matPicker",
+      "method": "GET",
+      "path": "/api/v1/offers/erpSelections/matPicker/{erpSelectionId}",
+      "summary": "material picker for erp selection"
+    },
+    {
+      "name": "offer_put_v1_offers",
+      "method": "PUT",
+      "path": "/api/v1/offers",
+      "summary": "Gets list of offers"
+    },
+    {
+      "name": "offer_post_v1_offers",
+      "method": "POST",
+      "path": "/api/v1/offers",
+      "summary": "Creates an offer"
+    },
+    {
+      "name": "offer_get_v1_offer",
+      "method": "GET",
+      "path": "/api/v1/offer/{offerId}",
+      "summary": "Gets an offer"
+    },
+    {
+      "name": "offer_put_v1_offer",
+      "method": "PUT",
+      "path": "/api/v1/offer/{offerId}",
+      "summary": "Updates an offer"
+    },
+    {
+      "name": "offer_delete_v1_offer",
+      "method": "DELETE",
+      "path": "/api/v1/offer/{offerId}",
+      "summary": "Deletes an offer"
+    }
+  ],
+  "operating_systems": [
+    {
+      "name": "operating_systems_post_v1_os",
+      "method": "POST",
+      "path": "/api/v1/os",
+      "summary": "Creates a new os"
+    },
+    {
+      "name": "operating_systems_get_v1_os",
+      "method": "GET",
+      "path": "/api/v1/os",
+      "summary": "Get a list of all os"
+    },
+    {
+      "name": "operating_systems_put_v1_os",
+      "method": "PUT",
+      "path": "/api/v1/os/{id}",
+      "summary": "Updates a os"
+    },
+    {
+      "name": "operating_systems_get_v1_os",
+      "method": "GET",
+      "path": "/api/v1/os/{id}",
+      "summary": "Get a specific os"
+    },
+    {
+      "name": "operating_systems_delete_v1_os",
+      "method": "DELETE",
+      "path": "/api/v1/os/{id}",
+      "summary": "Deletes a specific os"
+    }
+  ],
+  "pc": [
+    {
+      "name": "pc_get_v1_pcs",
+      "method": "GET",
+      "path": "/api/v1/pcs/{pcId}",
+      "summary": "Gets a pc by id"
+    },
+    {
+      "name": "pc_put_v1_pcs",
+      "method": "PUT",
+      "path": "/api/v1/pcs/{pcId}",
+      "summary": "Updates a pc"
+    },
+    {
+      "name": "pc_delete_v1_pcs",
+      "method": "DELETE",
+      "path": "/api/v1/pcs/{pcId}",
+      "summary": "Deletes a pc"
+    },
+    {
+      "name": "pc_post_v1_pcs",
+      "method": "POST",
+      "path": "/api/v1/pcs",
+      "summary": "Creates a pc"
+    },
+    {
+      "name": "pc_put_v1_pcs",
+      "method": "PUT",
+      "path": "/api/v1/pcs",
+      "summary": "Gets a list of pcs"
+    }
+  ],
+  "periphery": [
+    {
+      "name": "periphery_get_v1_peripheries",
+      "method": "GET",
+      "path": "/api/v1/peripheries/{peripheryId}",
+      "summary": "Gets a periphery by id"
+    },
+    {
+      "name": "periphery_put_v1_peripheries",
+      "method": "PUT",
+      "path": "/api/v1/peripheries/{peripheryId}",
+      "summary": "Updates a periphery"
+    },
+    {
+      "name": "periphery_delete_v1_peripheries",
+      "method": "DELETE",
+      "path": "/api/v1/peripheries/{peripheryId}",
+      "summary": "Deletes a periphery"
+    },
+    {
+      "name": "periphery_post_v1_peripheries",
+      "method": "POST",
+      "path": "/api/v1/peripheries",
+      "summary": "Creates a periphery"
+    },
+    {
+      "name": "periphery_put_v1_peripheries",
+      "method": "PUT",
+      "path": "/api/v1/peripheries",
+      "summary": "Gets a list of peripheries"
+    },
+    {
+      "name": "periphery_get_peripheries_types",
+      "method": "GET",
+      "path": "/api/v1/peripheries/types",
+      "summary": "Get periphery types"
+    },
+    {
+      "name": "periphery_post_peripheries_types",
+      "method": "POST",
+      "path": "/api/v1/peripheries/types",
+      "summary": "Create periphery type"
+    },
+    {
+      "name": "periphery_put_peripheries_types",
+      "method": "PUT",
+      "path": "/api/v1/peripheries/types/{typeId}",
+      "summary": "Update periphery type"
+    },
+    {
+      "name": "periphery_delete_peripheries_types",
+      "method": "DELETE",
+      "path": "/api/v1/peripheries/types/{typeId}",
+      "summary": "Delete periphery type"
+    },
+    {
+      "name": "periphery_post_peripheries_buildIn",
+      "method": "POST",
+      "path": "/api/v1/peripheries/{peripheryId}/buildIn/{linkTypeId}/{linkId}",
+      "summary": "Assign periphery"
+    },
+    {
+      "name": "periphery_delete_peripheries_buildIn",
+      "method": "DELETE",
+      "path": "/api/v1/peripheries/{peripheryId}/buildIn/{linkTypeId}/{linkId}",
+      "summary": "Delete periphery assignment"
+    }
+  ],
+  "remote_supports": [
+    {
+      "name": "remote_supports_post_remoteSupports_v1",
+      "method": "POST",
+      "path": "/api/remoteSupports/v1",
+      "summary": "Creates/imports a remote support into the database"
+    },
+    {
+      "name": "remote_supports_put_remoteSupports_v1",
+      "method": "PUT",
+      "path": "/api/remoteSupports/v1",
+      "summary": "Get list of remote supports"
+    },
+    {
+      "name": "remote_supports_get_remoteSupports_v1",
+      "method": "GET",
+      "path": "/api/remoteSupports/v1/{remoteSupportId}",
+      "summary": "Get remote support by id"
+    },
+    {
+      "name": "remote_supports_put_remoteSupports_v1",
+      "method": "PUT",
+      "path": "/api/remoteSupports/v1/{remoteSupportId}",
+      "summary": "Updates a remote support"
+    },
+    {
+      "name": "remote_supports_delete_remoteSupports_v1",
+      "method": "DELETE",
+      "path": "/api/remoteSupports/v1/{remoteSupportId}",
+      "summary": "Delete remote support"
+    },
+    {
+      "name": "remote_supports_get_v1_assignDevice",
+      "method": "GET",
+      "path": "/api/remoteSupports/v1/assignDevice",
+      "summary": "Gets all device assignments"
+    },
+    {
+      "name": "remote_supports_post_v1_assignDevice",
+      "method": "POST",
+      "path": "/api/remoteSupports/v1/assignDevice",
+      "summary": "Creates a device assignment"
+    },
+    {
+      "name": "remote_supports_delete_v1_assignDevice",
+      "method": "DELETE",
+      "path": "/api/remoteSupports/v1/assignDevice",
+      "summary": "Deletes a device assignment"
+    },
+    {
+      "name": "remote_supports_get_v1_assignEmployee",
+      "method": "GET",
+      "path": "/api/remoteSupports/v1/assignEmployee",
+      "summary": "Gets all technician assignments"
+    },
+    {
+      "name": "remote_supports_post_v1_assignEmployee",
+      "method": "POST",
+      "path": "/api/remoteSupports/v1/assignEmployee",
+      "summary": "Creates a technician assignment"
+    },
+    {
+      "name": "remote_supports_delete_v1_assignEmployee",
+      "method": "DELETE",
+      "path": "/api/remoteSupports/v1/assignEmployee",
+      "summary": "Delets a technician assignment"
+    }
+  ],
+  "search": [
+    {
+      "name": "search_put_v1_search",
+      "method": "PUT",
+      "path": "/api/v1/search",
+      "summary": "global search"
+    }
+  ],
+  "security": [
+    {
+      "name": "security_post_v1_login",
+      "method": "POST",
+      "path": "/api/v1/login",
+      "summary": "logs in the user and generates an api token for further authentication"
+    }
+  ],
+  "services": [
+    {
+      "name": "services_post_v1_services",
+      "method": "POST",
+      "path": "/api/v1/services",
+      "summary": "Creates a service"
+    },
+    {
+      "name": "services_get_v1_services",
+      "method": "GET",
+      "path": "/api/v1/services",
+      "summary": "Gets a list of all services"
+    },
+    {
+      "name": "services_get_v1_services",
+      "method": "GET",
+      "path": "/api/v1/services/{id}",
+      "summary": "Gets a service by id"
+    },
+    {
+      "name": "services_put_v1_services",
+      "method": "PUT",
+      "path": "/api/v1/services/{id}",
+      "summary": "Updates a service"
+    },
+    {
+      "name": "services_delete_v1_services",
+      "method": "DELETE",
+      "path": "/api/v1/services/{id}",
+      "summary": "Deletes a service"
+    }
+  ],
+  "supports": [
+    {
+      "name": "supports_put_supports_list",
+      "method": "PUT",
+      "path": "/api/v1/supports/list",
+      "summary": "Get a support list"
+    },
+    {
+      "name": "supports_post_v1_supports",
+      "method": "POST",
+      "path": "/api/v1/supports",
+      "summary": "Creates a support/appointment"
+    },
+    {
+      "name": "supports_get_v1_supports",
+      "method": "GET",
+      "path": "/api/v1/supports/{supportId}",
+      "summary": "Gets a support/appointment"
+    },
+    {
+      "name": "supports_put_v1_supports",
+      "method": "PUT",
+      "path": "/api/v1/supports/{supportId}",
+      "summary": "Edits a support/appointment"
+    },
+    {
+      "name": "supports_post_supports_signature",
+      "method": "POST",
+      "path": "/api/v1/supports/signature/{supportId}",
+      "summary": "Uploads a signature for supports"
+    }
+  ],
+  "tags": [
+    {
+      "name": "tags_post_v1_tags",
+      "method": "POST",
+      "path": "/api/v1/tags",
+      "summary": "Creates a new tag"
+    },
+    {
+      "name": "tags_get_v1_tags",
+      "method": "GET",
+      "path": "/api/v1/tags",
+      "summary": "Get all tags"
+    },
+    {
+      "name": "tags_get_v1_tags",
+      "method": "GET",
+      "path": "/api/v1/tags/{id}",
+      "summary": "Gets a tag"
+    },
+    {
+      "name": "tags_put_v1_tags",
+      "method": "PUT",
+      "path": "/api/v1/tags/{id}",
+      "summary": "Edits a tag"
+    },
+    {
+      "name": "tags_delete_v1_tags",
+      "method": "DELETE",
+      "path": "/api/v1/tags/{id}",
+      "summary": "Deletes a tag"
+    },
+    {
+      "name": "tags_post_tags_assignment",
+      "method": "POST",
+      "path": "/api/v1/tags/assignment",
+      "summary": "Assigns a tag"
+    },
+    {
+      "name": "tags_delete_tags_assignment",
+      "method": "DELETE",
+      "path": "/api/v1/tags/assignment",
+      "summary": "Removes a tag"
+    },
+    {
+      "name": "tags_get_tags_assignment",
+      "method": "GET",
+      "path": "/api/v1/tags/assignment",
+      "summary": "List of tags to an assignment"
+    },
+    {
+      "name": "tags_put_tags_assignment",
+      "method": "PUT",
+      "path": "/api/v1/tags/assignment",
+      "summary": "Assigns multiple tags"
+    },
+    {
+      "name": "tags_get_assignment_log",
+      "method": "GET",
+      "path": "/api/v1/tags/assignment/log",
+      "summary": "List of tags logs to an assignment"
+    }
+  ],
+  "ticket_board": [
+    {
+      "name": "ticket_board_get_v1_ticketBoard",
+      "method": "GET",
+      "path": "/api/v1/ticketBoard",
+      "summary": "Gets the ticket board with all panels"
+    },
+    {
+      "name": "ticket_board_get_ticketBoard_panel",
+      "method": "GET",
+      "path": "/api/v1/ticketBoard/panel",
+      "summary": "Gets an empty ticket board panel"
+    },
+    {
+      "name": "ticket_board_post_ticketBoard_panel",
+      "method": "POST",
+      "path": "/api/v1/ticketBoard/panel",
+      "summary": "Creates a new ticket board panel"
+    },
+    {
+      "name": "ticket_board_put_ticketBoard_panel",
+      "method": "PUT",
+      "path": "/api/v1/ticketBoard/panel",
+      "summary": "Updates a ticket board panel"
+    },
+    {
+      "name": "ticket_board_get_ticketBoard_panel",
+      "method": "GET",
+      "path": "/api/v1/ticketBoard/panel/{id}",
+      "summary": "Gets a ticket board panel"
+    },
+    {
+      "name": "ticket_board_delete_ticketBoard_panel",
+      "method": "DELETE",
+      "path": "/api/v1/ticketBoard/panel/{id}",
+      "summary": "Deletes a ticket board panel"
+    },
+    {
+      "name": "ticket_board_get_panel_registers",
+      "method": "GET",
+      "path": "/api/v1/ticketBoard/panel/{id}/registers",
+      "summary": "Gets all registers from a ticket board panel"
+    },
+    {
+      "name": "ticket_board_get_ticketBoard_project",
+      "method": "GET",
+      "path": "/api/v1/ticketBoard/project/{id}",
+      "summary": "Gets a ticket board from a project"
+    },
+    {
+      "name": "ticket_board_get_project_registers",
+      "method": "GET",
+      "path": "/api/v1/ticketBoard/project/{id}/registers",
+      "summary": "Gets all registers from a ticket board project"
+    },
+    {
+      "name": "ticket_board_get_project_globalPanels",
+      "method": "GET",
+      "path": "/api/v1/ticketBoard/project/globalPanels",
+      "summary": "Get global ticket panels"
+    }
+  ],
+  "ticket_content": [
+    {
+      "name": "ticket_content_get_tickets_documents",
+      "method": "GET",
+      "path": "/api/v1/tickets/{ticketId}/documents",
+      "summary": "Gets all ticket documents"
+    },
+    {
+      "name": "ticket_content_get_tickets_documents",
+      "method": "GET",
+      "path": "/api/v1/tickets/{ticketId}/documents/{documentId}",
+      "summary": "Gets a ticket document"
+    },
+    {
+      "name": "ticket_content_get_tickets_screenshots",
+      "method": "GET",
+      "path": "/api/v1/tickets/{ticketId}/screenshots",
+      "summary": "Gets all ticket images"
+    },
+    {
+      "name": "ticket_content_get_tickets_screenshots",
+      "method": "GET",
+      "path": "/api/v1/tickets/{ticketId}/screenshots/{imageId}",
+      "summary": "Gets a ticket image"
+    },
+    {
+      "name": "ticket_content_post_tickets_upload",
+      "method": "POST",
+      "path": "/api/v1/tickets/{ticketId}/upload",
+      "summary": "upload a document/image"
+    }
+  ],
+  "ticket_lists": [
+    {
+      "name": "ticket_lists_get_tickets_own",
+      "method": "GET",
+      "path": "/api/v1/tickets/own",
+      "summary": "gets a list of own tickets (assigned to currently logged in employee)"
+    },
+    {
+      "name": "ticket_lists_get_tickets_general",
+      "method": "GET",
+      "path": "/api/v1/tickets/general",
+      "summary": "gets a list of general tickets (assigned to no employee)"
+    },
+    {
+      "name": "ticket_lists_get_tickets_company",
+      "method": "GET",
+      "path": "/api/v1/tickets/company/{companyId}",
+      "summary": "gets a list of company tickets"
+    },
+    {
+      "name": "ticket_lists_get_tickets_technician",
+      "method": "GET",
+      "path": "/api/v1/tickets/technician",
+      "summary": "gets a list of tickets of all technicians"
+    },
+    {
+      "name": "ticket_lists_get_tickets_repair",
+      "method": "GET",
+      "path": "/api/v1/tickets/repair",
+      "summary": "gets a list of repair tickets"
+    },
+    {
+      "name": "ticket_lists_get_tickets_notIdentified",
+      "method": "GET",
+      "path": "/api/v1/tickets/notIdentified",
+      "summary": "gets a list of not identified tickets"
+    },
+    {
+      "name": "ticket_lists_get_tickets_projects",
+      "method": "GET",
+      "path": "/api/v1/tickets/projects",
+      "summary": "gets a list of all projects"
+    },
+    {
+      "name": "ticket_lists_get_tickets_localAdminOverview",
+      "method": "GET",
+      "path": "/api/v1/tickets/localAdminOverview",
+      "summary": "gets a list of all tickets which are assigned to local ticket admins"
+    },
+    {
+      "name": "ticket_lists_get_tickets_withRole",
+      "method": "GET",
+      "path": "/api/v1/tickets/withRole",
+      "summary": "gets a list of all ticket which a technician has a role in"
+    },
+    {
+      "name": "ticket_lists_put_v1_tickets",
+      "method": "PUT",
+      "path": "/api/v1/tickets",
+      "summary": "Get a (custom) ticket list"
+    }
+  ],
+  "ticket_states": [
+    {
+      "name": "ticket_states_get_admin_ticketStates",
+      "method": "GET",
+      "path": "/api/v1/admin/ticketStates",
+      "summary": "Gets a list of all ticket states"
+    },
+    {
+      "name": "ticket_states_post_admin_ticketStates",
+      "method": "POST",
+      "path": "/api/v1/admin/ticketStates",
+      "summary": "Creates a ticket state"
+    },
+    {
+      "name": "ticket_states_put_admin_ticketStates",
+      "method": "PUT",
+      "path": "/api/v1/admin/ticketStates/{id}",
+      "summary": "Updates a ticket state"
+    },
+    {
+      "name": "ticket_states_delete_admin_ticketStates",
+      "method": "DELETE",
+      "path": "/api/v1/admin/ticketStates/{id}",
+      "summary": "Deletes a ticket state"
+    }
+  ],
+  "tickets": [
+    {
+      "name": "tickets_post_v1_tickets",
+      "method": "POST",
+      "path": "/api/v1/tickets",
+      "summary": "Creates a ticket in the database"
+    },
+    {
+      "name": "tickets_get_v1_tickets",
+      "method": "GET",
+      "path": "/api/v1/tickets/{ticketId}",
+      "summary": "Gets a ticket by id"
+    },
+    {
+      "name": "tickets_delete_v1_tickets",
+      "method": "DELETE",
+      "path": "/api/v1/tickets/{ticketId}",
+      "summary": "Deletes a ticket by id"
+    },
+    {
+      "name": "tickets_put_v1_tickets",
+      "method": "PUT",
+      "path": "/api/v1/tickets/{ticketId}",
+      "summary": "Updates a ticket"
+    },
+    {
+      "name": "tickets_get_tickets_history",
+      "method": "GET",
+      "path": "/api/v1/tickets/history/{ticketId}",
+      "summary": "Gets a ticket history"
+    },
+    {
+      "name": "tickets_post_tickets_comments",
+      "method": "POST",
+      "path": "/api/v1/tickets/{ticketId}/comments",
+      "summary": "Creates a comment"
+    }
+  ],
+  "timers": [
+    {
+      "name": "timers_get_v1_timers",
+      "method": "GET",
+      "path": "/api/v1/timers",
+      "summary": "Get all timers of current user"
+    },
+    {
+      "name": "timers_post_v1_timers",
+      "method": "POST",
+      "path": "/api/v1/timers",
+      "summary": "Creates a timer"
+    },
+    {
+      "name": "timers_delete_v1_timers",
+      "method": "DELETE",
+      "path": "/api/v1/timers",
+      "summary": "Deletes a timer"
+    },
+    {
+      "name": "timers_get_v1_timers",
+      "method": "GET",
+      "path": "/api/v1/timers/{timerId}",
+      "summary": "Get a specific timer"
+    },
+    {
+      "name": "timers_put_v1_timers",
+      "method": "PUT",
+      "path": "/api/v1/timers/{timerId}",
+      "summary": "Starts/stops timer"
+    },
+    {
+      "name": "timers_get_timers_notes",
+      "method": "GET",
+      "path": "/api/v1/timers/notes/{timerId}",
+      "summary": "Get all timer fragments"
+    },
+    {
+      "name": "timers_delete_timers_notes",
+      "method": "DELETE",
+      "path": "/api/v1/timers/notes",
+      "summary": "Deletes a timer fragment"
+    },
+    {
+      "name": "timers_put_timers_notes",
+      "method": "PUT",
+      "path": "/api/v1/timers/notes",
+      "summary": "Updates a timer fragment"
+    }
+  ],
+  "timestamp": [
+    {
+      "name": "timestamp_get_v1_timestamps",
+      "method": "GET",
+      "path": "/api/v1/timestamps",
+      "summary": "gets a list of timestamps from a given period"
+    },
+    {
+      "name": "timestamp_post_v1_timestamps",
+      "method": "POST",
+      "path": "/api/v1/timestamps",
+      "summary": "writes a timestamp into the database"
+    },
+    {
+      "name": "timestamp_put_v1_timestamps",
+      "method": "PUT",
+      "path": "/api/v1/timestamps/{timestampId}",
+      "summary": "edits a single timestamp"
+    },
+    {
+      "name": "timestamp_put_timestamps_day",
+      "method": "PUT",
+      "path": "/api/v1/timestamps/{employeeId}/day/{day}",
+      "summary": "writes the timstamps of a whole day into the database at once"
+    },
+    {
+      "name": "timestamp_get_timestamps_info",
+      "method": "GET",
+      "path": "/api/v1/timestamps/info",
+      "summary": "gets the timestamp infos for a given time period"
+    },
+    {
+      "name": "timestamp_get_timestamps_statistics",
+      "method": "GET",
+      "path": "/api/v1/timestamps/statistics",
+      "summary": "gets the timestamp infos for a given time period (with statistical values)\n"
+    },
+    {
+      "name": "timestamp_post_timestamps_dayClosing",
+      "method": "POST",
+      "path": "/api/v1/timestamps/dayClosing",
+      "summary": "does one or more \"day closings\" for the timestamp module"
+    },
+    {
+      "name": "timestamp_delete_timestamps_dayClosing",
+      "method": "DELETE",
+      "path": "/api/v1/timestamps/dayClosing",
+      "summary": "remove / undo one or more \"day closings\" for the timestamp module"
+    },
+    {
+      "name": "timestamp_get_dayClosing_tillDate",
+      "method": "GET",
+      "path": "/api/v1/timestamps/dayClosing/tillDate",
+      "summary": "gets all infos about last dayclosings for employees"
+    },
+    {
+      "name": "timestamp_post_dayClosing_tillDate",
+      "method": "POST",
+      "path": "/api/v1/timestamps/dayClosing/tillDate",
+      "summary": "created dayClosings to a given date"
+    },
+    {
+      "name": "timestamp_post_employee_initialBalance",
+      "method": "POST",
+      "path": "/api/v1/timestamps/employee/{employeeId}/initialBalance",
+      "summary": "sets the initial balance for this employee"
+    },
+    {
+      "name": "timestamp_get_timestamps_pauseConfigs",
+      "method": "GET",
+      "path": "/api/v1/timestamps/pauseConfigs",
+      "summary": "gets a list of all pause configs"
+    },
+    {
+      "name": "timestamp_post_timestamps_pauseConfigs",
+      "method": "POST",
+      "path": "/api/v1/timestamps/pauseConfigs",
+      "summary": "creates a pause config"
+    },
+    {
+      "name": "timestamp_put_timestamps_pauseConfigs",
+      "method": "PUT",
+      "path": "/api/v1/timestamps/pauseConfigs/{id}",
+      "summary": "updates a pause config"
+    },
+    {
+      "name": "timestamp_delete_timestamps_pauseConfigs",
+      "method": "DELETE",
+      "path": "/api/v1/timestamps/pauseConfigs/{id}",
+      "summary": "deletes a pause config"
+    }
+  ],
+  "vacationrequests": [
+    {
+      "name": "vacationrequests_put_vacationRequests_list",
+      "method": "PUT",
+      "path": "/api/v1/vacationRequests/list",
+      "summary": "Gets a list of vacation requests"
+    },
+    {
+      "name": "vacationrequests_get_vacationRequests_planningAdditionalTypes",
+      "method": "GET",
+      "path": "/api/v1/vacationRequests/planningAdditionalTypes",
+      "summary": "Gets a list of absence/custom types"
+    },
+    {
+      "name": "vacationrequests_post_v1_vacationRequests",
+      "method": "POST",
+      "path": "/api/v1/vacationRequests",
+      "summary": "creates a vacation request"
+    },
+    {
+      "name": "vacationrequests_put_v1_vacationRequests",
+      "method": "PUT",
+      "path": "/api/v1/vacationRequests/{id}",
+      "summary": "updates a vacation request"
+    },
+    {
+      "name": "vacationrequests_delete_v1_vacationRequests",
+      "method": "DELETE",
+      "path": "/api/v1/vacationRequests/{id}",
+      "summary": "deletes a vacation request"
+    },
+    {
+      "name": "vacationrequests_get_vacationDays_year",
+      "method": "GET",
+      "path": "/api/v1/vacationRequests/vacationDays/year/{year}",
+      "summary": "gets the available vacation days per year"
+    },
+    {
+      "name": "vacationrequests_post_vacationRequests_vacationDays",
+      "method": "POST",
+      "path": "/api/v1/vacationRequests/vacationDays",
+      "summary": "sets the available vacation days per year"
+    }
+  ],
+  "webhooks": [
+    {
+      "name": "webhooks_post_tanssEvents_rules",
+      "method": "POST",
+      "path": "/api/v1/tanssEvents/rules",
+      "summary": "creates a rule"
+    },
+    {
+      "name": "webhooks_put_tanssEvents_rules",
+      "method": "PUT",
+      "path": "/api/v1/tanssEvents/rules",
+      "summary": "get a list of rules"
+    },
+    {
+      "name": "webhooks_put_tanssEvents_rules",
+      "method": "PUT",
+      "path": "/api/v1/tanssEvents/rules/{id}",
+      "summary": "updates a rule"
+    },
+    {
+      "name": "webhooks_get_tanssEvents_rules",
+      "method": "GET",
+      "path": "/api/v1/tanssEvents/rules/{id}",
+      "summary": "gets a rule"
+    },
+    {
+      "name": "webhooks_delete_tanssEvents_rules",
+      "method": "DELETE",
+      "path": "/api/v1/tanssEvents/rules/{id}",
+      "summary": "deletes a rule"
+    },
+    {
+      "name": "webhooks_put_test_action",
+      "method": "PUT",
+      "path": "/api/v1/tanssEvents/rules/test/action",
+      "summary": "test a rule"
+    }
+  ]
+}

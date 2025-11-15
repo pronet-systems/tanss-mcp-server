@@ -28,11 +28,12 @@ The TANSS MCP Server bridges the gap between AI assistants (like Claude/n8n) and
 
 ## Features
 
-✅ **238 API endpoints** covering all TANSS functionality
-✅ **237 tools** (e.g., `create_ticket`)
-✅ **Dual transport modes**: stdio and SSE (HTTP)
-✅ **Role-based authentication**: Support for 6 different token types
+✅ **238 API endpoints** covering all TANSS functionality  
+✅ **237 tools** (e.g., `create_ticket`)  
+✅ **Dual transport modes**: stdio and SSE (HTTP)  
+✅ **Role-based authentication**: Support for 6 different token types  
 ✅ **Automatic token management**: Bearer prefix handling and role-specific token prioritization
+
 ---
 
 ## Quick Start

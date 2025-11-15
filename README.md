@@ -2,9 +2,9 @@
 
 A comprehensive Model Context Protocol (MCP) server for the TANSS API, providing seamless integration with AI assistants like Claude or n8n.
 
-**Version:** 1.0.0
-**Author:** Sebastian Michel
-**Company:** ProNet Systems GmbH
+**Version:** 1.0.0  
+**Author:** Sebastian Michel  
+**Company:** ProNet Systems GmbH  
 **Website:** https://www.pronet-systems.de
 
 ---
